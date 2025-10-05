@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>SME Finder</title>
+    <link rel="stylesheet" href="form.css"/>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+</head>
+<body>
+  <div class="banner">
+    <canvas id="dotsCanvas"></canvas>
+  </div>
+
+  <button id="theme-switch" class="theme-switch">🌙</button>
+
+  <div class="form-wrapper">
+    <div class="form-box">
+      <h1>🔍 SME PDF Finder</h1>
+      <form class="input-wrapper" id="topicForm">
+        <select id="board" required>
+          <option value="" disabled selected hidden>Choose board</option>
+          <option value="cie">CIE</option>
+          <option value="edexcel">Edexcel</option>
+          <option value="oxford">Oxford AQA</option>
+        </select>
+
+        <select id="level" required>
+          <option value="" disabled selected hidden>Choose level</option>
+          <option value="IGCSE">IGCSE</option>
+          <option value="GCSE">GCSE</option>
+          <option value="A-Level">A-Level</option>
+        </select>
+
+        <select id="qtype" required>
+          <option value="" disabled selected hidden>Choose type</option>
+          <option value="Notes">Notes</option>
+          <option value="MCQ">MCQ</option>
+          <option value="Theory">Theory</option>
+        </select>
+
+        <input id="topic" type="text" placeholder="Enter topic..." required />
+
+        <button class="find-button" type="submit">Find</button>
+      </form>
+
+      <p class="disclaimer">
+        <em>This isn't guaranteed to give you the PDFs you are looking for; you may have to search more!! :))</em>
+      </p>
+    </div>
+
+    <footer class="site-footer">
+      Made with ❤️ by crxwn &amp; bamb-boo !!
+    </footer>
+  </div>
+
+<script src="main.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
